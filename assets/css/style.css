@@ -289,7 +289,7 @@ li::marker {
 /*fin: reset y clases generales*/
 .principal {
   position: relative;
-  background: #030b2f;
+  background: #202123;
   padding: 0 1rem 1.2rem 1rem;
   box-shadow: rgba(33, 35, 38, 0.63) 0px 10px 10px -10px;
   overflow: hidden;
@@ -338,9 +338,9 @@ li::marker {
   margin: auto;
   position: relative;
   z-index: 1;
-  box-shadow: 10px 10px 29px 1px rgba(77, 252, 255, 0.47);
-  -webkit-box-shadow: 10px 10px 29px 1px rgba(77, 252, 255, 0.47);
-  -moz-box-shadow: 10px 10px 29px 1px rgba(77, 252, 255, 0.47);
+  box-shadow: 6px 7px 13px 1px #fd4600;
+  -webkit-box-shadow: 6px 7px 13px 1px #fd4600;
+  -moz-box-shadow: 6px 7px 13px 1px #fd4600;
 }
 .principal .imagen img {
   width: 100%;
