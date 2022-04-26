@@ -1,0 +1,31 @@
+.tabs-catg{
+    margin-top: 3rem;
+    .tablinks {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        opacity: .9;
+        transition: .5s;
+        color: $gray-color;
+        margin: 0 0.5rem;
+        border: 1px solid #4950571c;
+        &:hover{
+            background: $degradade;
+            color: $white-color;
+            opacity: 1;
+        }
+        &.active{
+            background: $degradade;
+            color: $white-color;
+            opacity: 1;
+        }
+      }
+}
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+
+  }

@@ -1,0 +1,48 @@
+/* inicio: reset y clases generales*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&family=Noto+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    min-height: 100vh;
+   
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    display: inline-block;
+    padding: 1rem;
+    &::before {
+        content: "";
+    }
+    &::marker {
+        content: "";
+    }
+}
+
+.no--btop{
+    border-top: none !important;
+}
+.no--b--bottom{
+    border-bottom: none !important;
+}
+.d-block{
+    display: block;
+}
+.b--shadow {
+    box-shadow: rgb(0 0 0 / 3%) 2.4px 0.5px 3.2px;
+}
+/*fin: reset y clases generales*/

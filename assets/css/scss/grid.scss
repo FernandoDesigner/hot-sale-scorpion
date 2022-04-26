@@ -1,0 +1,72 @@
+/* grid system*/
+
+/* GRID SYSTEM */
+$cols       :   12;
+$gap        :   30px;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    max-width: 1024px;
+    &.container--fluid{
+        max-width: 1600px;
+        padding: 0 5rem;
+
+    }
+}
+@media screen and(max-width:750px){
+    .container{
+        &.container--fluid{
+            padding: inherit;
+        }
+    }
+}
+.container__grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: $gap / -2;
+    margin-right: $gap / -2;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.no-wrap{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+[class*="column-"],
+.column{
+    width: 100%;
+    max-width: 100%;
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap / 2;
+    margin-top: $gap / 2;
+}
+
+@mixin grid-system($flex){
+    .#{ $flex }{
+        flex: 1 0 0;
+    }
+    
+    @for $column from 1 through $cols{
+        .#{ $flex }-#{ $column }{
+            flex: 0 0 (100% / $cols) * $column;
+            max-width: (100% / $cols) * $column;
+        }
+    }
+}
+
+@include grid-system(column);
+
+@media screen and (min-width: 578px){
+    @include grid-system(column-sm)
+}
+
+@media screen and (min-width: 1024px){
+    @include grid-system(column-md)
+}

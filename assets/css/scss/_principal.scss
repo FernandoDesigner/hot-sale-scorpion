@@ -1,0 +1,181 @@
+.principal {
+    position: relative;
+    background: $main-color;
+    padding: 0 1rem 1.2rem 1rem;
+    box-shadow: rgb(33 35 38 / 63%) 0px 10px 10px -10px;
+    overflow: hidden;
+    min-height: 100vh;
+
+    .n-1 {
+        top: -98px;
+        left: -91px;
+        height: 200px;
+        width: 200px;
+        animation: myAnim 10s linear 0s infinite normal none;
+    }
+    .n-2 {
+        top: 50%;
+        left: 50%;
+        height: 200px;
+        width: 200px;
+        animation: myAnim 10s linear 0s infinite normal none;
+    }
+    .n-3 {
+        right: -80px;
+        bottom: 145px;
+        height: 200px;
+        width: 200px;
+        animation: myAnim 10s linear 0s infinite normal none;
+    }
+
+    .text {
+        color: $white-color;
+        font-family: "Poppins", sans-serif;
+        margin: auto;
+        h1 {
+            color: transparent;
+            -webkit-text-stroke-width: 2.5px;
+            -webkit-text-stroke-color: $orange-color;
+            font-size: 2.6rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        a {
+            margin: 0.5rem 0;
+        }
+    }
+    .imagen {
+        width: 20rem;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        box-shadow: 10px 10px 29px 1px rgba(77, 252, 255, 0.47);
+        -webkit-box-shadow: 10px 10px 29px 1px rgba(77, 252, 255, 0.47);
+        -moz-box-shadow: 10px 10px 29px 1px rgba(77, 252, 255, 0.47);
+        img {
+            width: 100%;
+        }
+        &.img {
+            height: 15rem;
+            width: 27rem;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &.shad {
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     top: -9px;
+            //     left: 4%;
+            //     height: 16rem;
+            //     width: 26.5rem;
+            //     background-color: #ffffffad;
+            //     z-index: -1;
+            // }
+        }
+        &.shad2 {
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     top: -8px;
+            //     left: 2%;
+            //     height: 21rem;
+            //     width: 20.3rem;
+            //     background-color: #00000010;
+            //     z-index: -1;
+            // }
+        }
+    }
+
+    .more {
+        .item {
+            position: relative;
+            color: #ffff;
+            opacity: 0.79;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+            .text-item {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .column-sm-3 {
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 2px;
+                right: 0;
+                background-color: $gray-color-light;
+            }
+            &:last-child {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 0;
+                    width: 0;
+                    right: 0;
+                    background-color: transparent;
+                }
+            }
+            position: relative;
+        }
+    }
+    &.s2 {
+        margin-top: 2rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+}
+.row {
+    &.auto {
+        height: 100%;
+    }
+    &.aling-center-all {
+        justify-content: center;
+        align-items: center;
+    }
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+article {
+    margin-top: 2rem;
+}
+
+@keyframes myAnim {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+
+    80% {
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
