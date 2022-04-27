@@ -136,11 +136,9 @@
 
 
         <section class="tabs-catg">
-          <div class="row no-wrap aling-center-all">
-
-            <button class="tablinks" onclick="openCateg(event, 'HogarLimpieza')">Hogar y Limpieza</button>
+          <div class="row wrap aling-center-all">
             <button class="tablinks" onclick="openCateg(event, 'Mascotas')">Mascotas</button>
-
+            <button class="tablinks" onclick="openCateg(event, 'HogarLimpieza')">Hogar y Limpieza</button>
             <button class="tablinks active" onclick="openCateg(event, 'AlimentDespensas')">Alimentos y
               Despensas</button>
 
@@ -149,7 +147,7 @@
 
         <article>
           <div class="tabcontent" style="display:block" id="AlimentDespensas">
-            <div class="row">
+            <div class="row wrap carousel">
               <div class="column-md-4">
                 <div class="card__collection clear-fix">
                   <div class="cards cards--three" data-aos="flip-left">
@@ -205,7 +203,7 @@
         </article>
         <article>
           <div class="tabcontent" id="HogarLimpieza">
-            <div class="row">
+            <div class="row wrap carousel">
               <div class="column-md-4">
                 <div class="card__collection clear-fix">
                   <div class="cards cards--three">
@@ -264,8 +262,8 @@
         </article>
         <article>
           <div class="tabcontent" id="Mascotas">
-            <div class="row">
-              <div class="column-md-4">
+            <div class="row wrap carousel">
+              <div class="column-md-4 column-sm-6">
                 <div class="card__collection clear-fix">
                   <div class="cards cards--three">
                     <img src="assets/img/mascotas.png" class="img-responsive" alt="">
@@ -282,7 +280,7 @@
                   </div>
                 </div>
               </div>
-              <div class="column-md-4 ">
+              <div class="column-md-4 column-sm-6">
                 <div class="card__collection clear-fix">
                   <div class="cards cards--three">
                     <img src="assets/img/mascotas.png" class="img-responsive" alt="">
@@ -299,7 +297,7 @@
                   </div>
                 </div>
               </div>
-              <div class="column-md-4 ">
+              <div class="column-md-4 column-sm-6">
                 <div class="card__collection clear-fix">
                   <div class="cards cards--three">
                     <img src="assets/img/mascotas.png" class="img-responsive" alt="">
@@ -324,7 +322,7 @@
       </div>
       <section class="more-info">
         <div class="row">
-          <div class="column-md-4 column-sm-12">
+          <div class="column-md-4 column-sm-6">
             <div class="container-card" data-aos="flip-left">
               <div class="card-cube product">
                 <div class="picture">

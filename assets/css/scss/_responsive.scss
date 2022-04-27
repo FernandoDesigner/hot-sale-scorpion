@@ -1,0 +1,22 @@
+@media screen and (max-width: 570px){
+    .wrap{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .tabs-catg .tablinks{
+        flex: 0 0 1;
+    }
+    .carousel{
+        .column-md-4{
+            padding-left: 0;
+            &:first-child{
+                padding-left: inherit;
+            }
+        }
+
+    }
+    .card__collection .cards{
+        width: 270px;
+    }
+}

@@ -33,10 +33,9 @@ $gap        :   30px;
     display: flex;
     flex-wrap: wrap;
 }
-.no-wrap{
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+.wrap{
+    flex-wrap: wrap;
+ 
 }
 [class*="column-"],
 .column{
@@ -67,6 +66,9 @@ $gap        :   30px;
     @include grid-system(column-sm)
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 720px){
     @include grid-system(column-md)
+}
+@media screen and (min-width: 960px){
+    @include grid-system(column-lg)
 }
