@@ -90,43 +90,7 @@
         }
     }
 
-    .more {
-        .item {
-            position: relative;
-            color: #ffff;
-            opacity: 0.79;
-            transition: 0.2s ease-in-out;
-            cursor: pointer;
-            &:hover {
-                opacity: 1;
-            }
-            .text-item {
-                text-align: center;
-                width: 100%;
-            }
-        }
-        .column-sm-3 {
-            &::before {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 2px;
-                right: 0;
-                background-color: $gray-color-light;
-            }
-            &:last-child {
-                &::before {
-                    content: "";
-                    position: absolute;
-                    height: 0;
-                    width: 0;
-                    right: 0;
-                    background-color: transparent;
-                }
-            }
-            position: relative;
-        }
-    }
+   
     &.s2 {
         margin-top: 2rem;
         height: auto;
@@ -178,4 +142,63 @@ article {
     90% {
         transform: translateY(-6.4px);
     }
+}
+.more {
+    .item {
+        position: relative;
+        color: $blue-color;
+        opacity: 0.79;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        .text-item {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .column-sm-3 {
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            right: 0;
+            background-color: $gray-color-light;
+        }
+        &:last-child {
+            &::before {
+                content: "";
+                position: absolute;
+                height: 0;
+                width: 0;
+                right: 0;
+                background-color: transparent;
+            }
+        }
+        position: relative;
+    }
+}
+
+.img-banner{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.cols-padding{
+    [class*=column-], .column {
+        padding-right: 0;
+        padding-left: 8px;
+    }
+}
+.container-categ{
+    width: 100%;
+    background-color: $orange-color;
 }
